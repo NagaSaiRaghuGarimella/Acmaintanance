@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AC Service</title>
+  <link rel="stylesheet" href="AcMaintenanceService.css" />
+</head>
+
+<body>
+  <div class="service">
+    <div class="head">
+      <h2>AC Maintenance Service</h2>
+    </div>
+    <form action="">
+      <table>
+        <tr>
+          <td>
+            <label>Customer <br> Name</label>
+
+          </td>
+          <td>
+            <input type="text" placeholder="Enter your name">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>Mobile <br>
+              Number</label>
+          </td>
+          <td>
+            <input type="text" placeholder="Enter number">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Address</label>
+          </td>
+          <td>
+            <textarea name="area" id="area" cols="20" rows="5"> Enter your address</textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>AC Type</label>
+          </td>
+          <td>
+            <select name="select" class="tab">
+              <option value="">split</option>
+              <option value="">central</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Service <br> Type</label>
+          </td>
+          <td>
+            <input type="checkbox" class="space" name="Cleaning" value="500">Cleaning<br>
+            <input type="checkbox" class="space" name="Gas Refill" value="2500">Gas Refill
+            <br>
+            <input type="checkbox" class="space" name="Filter" value="750">Filter
+          </td>
+          <td>
+            <input type="checkbox" class="space" name="Repair" value="1500">Repair <br>
+            <input type="checkbox" class="space" name="Relocation" value="250">Relocation
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Date for <br> Appointment</label>
+          </td>
+          <td>
+            <input type="date" class="tab">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Yearly <br>
+              Maintenance
+            </label>
+          </td>
+          <td>
+            <input type="checkbox" id="maintenance" name="Maintenance" value="1500">Select if required
+          </td>
+        </tr>
+      </table>
+      <div id="button">
+        <button type="submit" onclick="bookAppointment()">Submit</button>
+        <button type="submit">Clear</button>
+      </div>
+    </form>
+    <div>
+    <p id="in"></p>
+    <b id="no"></b>
+    <p id="msg"></p>
+    <p id="main"></p>
+    <p id="discount"></p>
+    <p id="dm"></p>
+    </div>
+    
+  </div>
+
+  <script src="myScript.js"></script>
+</body>
+
+</html>
